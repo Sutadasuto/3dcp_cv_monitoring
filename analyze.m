@@ -5,7 +5,7 @@ rangesDict = getRangesDict();
 orientationThresholds = rangesDict("orientationThresholds"); % degrees
 curvatureThresholds = rangesDict("curvatureThresholds"); % mm^-1
 thicknessThresholds = rangesDict("thicknessThresholds"); % mm
-heightThresholds = rangesDict("thicknessThresholds"); % mm
+heightThresholds = rangesDict("heightThresholds"); % mm
 
 % Define some image properties
 imgPropDict = getImgPropDict();
