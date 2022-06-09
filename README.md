@@ -19,8 +19,8 @@ Given an input image of a 3D printed piece of concrete (with a lateral view), th
 
 Both the measured values and the produced histograms are shown as below:
 
-![alt text](https://github.com/Sutadasuto/I3DCP/blob/main/results/plots.png?raw=true)
-![alt text](https://github.com/Sutadasuto/I3DCP/blob/main/results/histograms.png?raw=true)
+![alt text](https://github.com/Sutadasuto/3dcp_cv_monitoring/blob/main/results/plots.png?raw=true)
+![alt text](https://github.com/Sutadasuto/3dcp_cv_monitoring/blob/main/results/histograms.png?raw=true)
 
 The green dotted lines show the user-defined ranges of admissible values.
 This ranges can be modified in the 'ranges.txt' file.
