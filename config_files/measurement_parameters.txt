@@ -1,0 +1,7 @@
+# Template: variable_name,value % Description
+dRes,5 % The step resolution to calculate angles
+splineStep,0.10 % The step resolution to calculate splines from interstitial lines. It is the ratio between the spline length and the image width
+lineStep,0.20 % The line segment lenght used to analyze orientation. It is the ratio between the spline length and the image width
+textureWindowWidthRatio,0.15625 % The ratio used to determine the texture windows' width. It is the ratio between the window width and the image width 
+interstitialR,5 % Used to clean the interlayer line segmentations and for plotting purposes. Recommended value <= 0.25*interstitial_segmentation_diameter
+gaussRatio,0.2 % Proportion of the texture window size to define the Gauss filter size

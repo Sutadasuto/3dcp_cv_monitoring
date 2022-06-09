@@ -1,0 +1,3 @@
+# Template: variable_name,value % Description
+mmPerPx,0.025 % mm per pixel approximation to calculate real life measurements
+nozzleCenter,100,700 % Coordinate (y,x) of the nozzle's center in pixels
