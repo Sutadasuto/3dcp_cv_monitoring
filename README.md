@@ -48,3 +48,6 @@ The script tries to use a GPU by default; the user can explicitly ask for no GPU
 After running the script, the input image (in PNG format), the interlayer segmentation map, the plots of local measures, and the histograms of the obtained measures will be saved in the 'results' directory.
 
 Notice, however, that you need to unzip the U-VGG19 weights ('weights.zip') and provide the path to the extracted file in 'config_files/config'.
+
+The 2 study cases presented in the article are available at the 'sample_images' directory.
+For more images, take a look at our I3DCP dataset: https://github.com/Sutadasuto/I3DCP
