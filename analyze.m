@@ -493,9 +493,17 @@ subplot(2,3,6);
 [n,v] = groupcounts(textures(:));
 n = n(2:end);
 v = v(2:end);
-texture_hist = [v n];
-bar(reordercats(categorical(labels), labels),n/sum(n(:)), 'cyan'); hold on;
-plot(reordercats(categorical(labels), labels),n/sum(n(:)), 'blue');
+textureClassNumbers = 0:str2double(labelNumbers(end));
+texture_hist = [textureClassNumbers' zeros(length(textureClassNumbers), 1)];
+for classNumber = textureClassNumbers
+    try
+        texture_hist(classNumber+1, 2) = n(v==classNumber);
+    catch
+        warning(sprintf("No instances of class '%s' found.", numberDict(num2str(classNumber))))
+    end
+end
+bar(reordercats(categorical(labels), labels),texture_hist(:,2)/sum(n(:)), 'cyan'); hold on;
+plot(reordercats(categorical(labels), labels),texture_hist(:,2)/sum(n(:)), 'blue');
 title("Texture windows distribution");
 ylim([0, 1.0]);
 % xline(0.5, '--g', 'Color', [0 0.5 0], 'LineWidth', 2.0); hold on;
