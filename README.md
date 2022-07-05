@@ -34,7 +34,7 @@ All the mentioned text files are contained in the 'config_files' directory.
 The current repository uses Python and Matlab code.
 Regarding the Python setup, an 'environment.yml' file is provided to replicate the conda environment used for testing.
 The Python environment is used to build the interlayer segmentation and the texture classification networks on Tensorflow 2.
-Regarding the Matlab code, it was tested on the 2020b version. The Matlab script performs the geometrical characterization.
+Regarding the Matlab code, it was tested on the 2020b version; it uses the image and the curve fitting toolboxes. The Matlab script performs the geometrical characterization.
 
 ## How to run
 The analysis of an image can be performed simply by running:
