@@ -248,11 +248,6 @@ for ii = 1:MM
     layerSkeleton = uint8(filteredSkeleton).*layerMask;
     layerDouble = im2double(leveledImage);
     layerDouble(layerMask == 0) = NaN;
-    bb = regionprops(layerMask,'BoundingBox').BoundingBox;
-    left = bb(1); 
-    top = bb(2);
-    regionW = bb(3);
-    regionH = bb(4);
     layerMask = double(layerMask);
     [sk_lab,NN] = bwlabel(layerSkeleton); % Find and label the lines between interstitial lines
     for jj = 1:NN
@@ -291,7 +286,7 @@ for ii = 1:MM
                 
                 % Save image info to show the predictions in the UI
                 windowNames = [windowNames; windowName];
-                textCoordinates = [textCoordinates; startX+left+interstitialR, startY+0.5*smallWindowSize(1)];   
+                textCoordinates = [textCoordinates; startX+interstitialR, startY+0.5*smallWindowSize(1)];   
                 % To illustrate the paper only
                 %rectangle('Position',[startX,startY,endX-startX,endY-startY],'LineWidth',10, 'EdgeColor', 'g')
                 %
