@@ -4,12 +4,16 @@ Tool for monitoring and anomaly detection of 3D Concrete Printing using Computer
 This code can be used to produce the results presented in
 
 ```
-@article{monitoring_3d_concrete,
-title = {Automatic monitoring of 3D concrete printing using computer vision},
+@article{RILLGARCIA2022103175,
+title = {Inline monitoring of 3D concrete printing using computer vision},
+journal = {Additive Manufacturing},
+volume = {60},
+pages = {103175},
 year = {2022},
-author = {Rodrigo Rill-García and Eva Dokladalova and Petr Dokládal and Jean-François Caron and Romain Mesnil and Pierre Margerit and Malo Charrier},
-keywords = {Automatic monitoring, 3D concrete printing, Image processing, Deep learning},
+issn = {2214-8604},
 doi = {https://doi.org/10.1016/j.addma.2022.103175},
+url = {https://www.sciencedirect.com/science/article/pii/S2214860422005644},
+author = {Rodrigo Rill-García and Eva Dokladalova and Petr Dokládal and Jean-François Caron and Romain Mesnil and Pierre Margerit and Malo Charrier},
 }
 ```
 
